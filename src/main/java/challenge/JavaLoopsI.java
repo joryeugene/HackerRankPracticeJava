@@ -1,6 +1,5 @@
 package challenge;
 
-import java.awt.font.NumericShaper.Range;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
