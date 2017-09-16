@@ -30,8 +30,11 @@ public class MainTest {
   public void mainTest() {
     Main.main(new String[]{});
 
-    String expected = MyLilHelper.getFormattedOutputString(new String[]{"4", "8", "16"});
+    String expected = MyLilHelper.getFormattedOutputString(new String[]{"4",
+                                                                        "8",
+                                                                        "16"});
 
-    Assert.assertEquals(expected, outContent.toString());
+    Assert.assertEquals(expected,
+                        outContent.toString());
   }
 }

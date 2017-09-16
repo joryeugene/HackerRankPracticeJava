@@ -9,7 +9,8 @@ public class MyLilHelper {
 
   public static String getFormattedOutputString(String[] printLines) {
     return Arrays.stream(printLines)
-                 .reduce("", (a, b) -> a.concat(b)
-                                        .concat(NEW_LINE));
+                 .reduce("",
+                         (a, b) -> a.concat(b)
+                                    .concat(NEW_LINE));
   }
 }
