@@ -1,3 +1,5 @@
+package challenge;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,13 +10,13 @@ import org.junit.Before;
 import org.junit.Test;
 import service.MyLilHelper;
 
-public class MainTest {
+public class TwoDArraysTest02 {
 
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
   @Before
   public void setUpStreams() throws FileNotFoundException {
-    String filePath = "/Users/Ryujin/code/_repos/HackerRankPractice/src/test/java/MainTest.txt";
+    String filePath = "/Users/Ryujin/code/_repos/HackerRankPractice/src/test/java/challenge/TwoDArraysTest02.txt";
     System.setIn(new FileInputStream(filePath));
     System.setOut(new PrintStream(outContent));
   }
@@ -27,11 +29,9 @@ public class MainTest {
 
   @Test
   public void mainTest() {
-    Main.main(new String[]{});
+    TwoDArrays.main(new String[]{});
 
-    String expected = MyLilHelper.getFormattedOutputString(new String[]{"4",
-                                                                        "8",
-                                                                        "16"});
+    String expected = MyLilHelper.getFormattedOutputString(new String[]{"-6"});
 
     Assert.assertEquals(expected, outContent.toString());
   }

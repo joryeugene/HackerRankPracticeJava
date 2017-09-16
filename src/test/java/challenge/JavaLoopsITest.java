@@ -43,7 +43,6 @@ public class JavaLoopsITest {
                      "2 x 9 = 18",
                      "2 x 10 = 20"});
 
-    Assert.assertEquals(expected,
-                        outContent.toString());
+    Assert.assertEquals(expected, outContent.toString());
   }
 }
